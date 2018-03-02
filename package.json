@@ -1,0 +1,20 @@
+{
+  "name": "donner",
+  "version": "1.0.0",
+  "description": "donner handles dom events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soenkekluth/donner.git"
+  },
+  "keywords": [],
+  "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soenkekluth/donner/issues"
+  },
+  "homepage": "https://github.com/soenkekluth/donner#readme"
+}
