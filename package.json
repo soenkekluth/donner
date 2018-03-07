@@ -12,6 +12,7 @@
     "bundle": "rollup -c rollup.config.js --environment INCLUDE_DEPS,BUILD:production",
     "docs": "documentation readme lib/donner.js --section API -q",
     "gh-pages": "gh-pages -d ./docs",
+    "deploy": "np",
     "watch": "rollup -cwm",
     "build:fast": "run-s cleanup bundle",
     "build": "NODE_ENV=production run-s lint cleanup bundle minify:* size docs",
@@ -48,10 +49,12 @@
     "deep-assign": "^2.0.0",
     "documentation": "^6.0.0",
     "eslint": "^4.18.2",
+    "eslint-config-sk": "^0.1.11",
     "gh-pages": "^1.1.0",
     "gzip-size-cli": "^2.1.0",
     "jest": "^22.4.2",
     "jsdom": "^11.6.2",
+    "np": "^2.20.1",
     "npm-run-all": "^4.1.2",
     "rimraf": "^2.6.2",
     "rollup": "^0.56.4",
@@ -63,7 +66,6 @@
   },
   "browserslist": ["> 5%", "last 4 versions", "ie >= 9"],
   "dependencies": {
-    "eslint-config-sk": "file:.yalc/eslint-config-sk",
     "object-assign": "^4.1.1"
   },
   "peerDependencies": {}
