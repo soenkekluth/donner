@@ -1,15 +1,23 @@
 {
   "extends": "sk",
   "parserOptions": {
-    "sourceType": "module"
-  },
-  "env": {
-    "node": true,
-    "browser": true,
-    "jest": true,
-    "es6": true
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "impliedStrict": true,
+      "experimentalObjectRestSpread": true,
+      "experimentalDecorators": true,
+      "jsx": true
+    }
   },
   "rules": {
-    "no-console":"off"
+    "node/no-unsupported-features": [
+      "warn",
+      {
+        "version": 9,
+        "ignores": []
+      }
+    ]
   }
 }

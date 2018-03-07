@@ -2571,25 +2571,33 @@ eslint-config-prettier@^2.9.0:
   dependencies:
     get-stdin "^5.0.1"
 
-eslint-config-sk-common@^0.1.11:
-  version "0.1.11"
-  resolved "https://registry.npmjs.org/eslint-config-sk-common/-/eslint-config-sk-common-0.1.11.tgz#db731f127f2f0c45dc1dffbc5b2102876ff6b3d3"
+eslint-config-sk-common@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/eslint-config-sk-common/-/eslint-config-sk-common-0.3.0.tgz#af53bb6ff2340c4df38f0311e1d95c2a7b73d095"
   dependencies:
     babel-eslint "^8.2.2"
     eslint "^4.18.2"
     eslint-config-prettier "^2.9.0"
     eslint-plugin-compat "^2.2.0"
+    eslint-plugin-jest "^21.13.0"
     eslint-plugin-prettier "^2.6.0"
     eslint-plugin-sort-class-members "^1.3.0"
     prettier "^1.11.1"
     sort-class-members-codemod "0.5.1"
 
-eslint-config-sk@^0.1.11:
-  version "0.1.11"
-  resolved "https://registry.npmjs.org/eslint-config-sk/-/eslint-config-sk-0.1.11.tgz#7edc5b82b052be2ca5c431f07b94a149c1d282b2"
+eslint-config-sk-node@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npmjs.org/eslint-config-sk-node/-/eslint-config-sk-node-0.3.1.tgz#f32eaa9ac5fea79b8ec1e263ac3811aed611b0ac"
+  dependencies:
+    eslint-config-sk-common "^0.3.0"
+    eslint-plugin-node "^6.0.1"
+
+eslint-config-sk@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npmjs.org/eslint-config-sk/-/eslint-config-sk-0.3.1.tgz#551fe923a7f7969da210515f752c7c6f3deb0ca4"
   dependencies:
     eslint "^4.18.2"
-    eslint-config-sk-common "^0.1.11"
+    eslint-config-sk-node "^0.3.1"
 
 eslint-plugin-compat@^2.2.0:
   version "2.2.0"
@@ -2600,6 +2608,19 @@ eslint-plugin-compat@^2.2.0:
     caniuse-db "^1.0.30000794"
     mdn-browser-compat-data "^0.0.20"
     requireindex "^1.1.0"
+
+eslint-plugin-jest@^21.13.0:
+  version "21.13.0"
+  resolved "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-21.13.0.tgz#9fc903158d79e953aefd861a55e8a8c9f6ab3d36"
+
+eslint-plugin-node@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/eslint-plugin-node/-/eslint-plugin-node-6.0.1.tgz#bf19642298064379315d7a4b2a75937376fa05e4"
+  dependencies:
+    ignore "^3.3.6"
+    minimatch "^3.0.4"
+    resolve "^1.3.3"
+    semver "^5.4.1"
 
 eslint-plugin-prettier@^2.6.0:
   version "2.6.0"
@@ -3698,7 +3719,7 @@ iconv-lite@0.4.19, iconv-lite@^0.4.17, iconv-lite@^0.4.5, iconv-lite@~0.4.13:
   version "0.4.19"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
 
-ignore@^3.1.2, ignore@^3.2.0, ignore@^3.3.3:
+ignore@^3.1.2, ignore@^3.2.0, ignore@^3.3.3, ignore@^3.3.6:
   version "3.3.7"
   resolved "https://registry.npmjs.org/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
 
@@ -6831,7 +6852,7 @@ resolve@1.1.7, resolve@1.1.x:
   version "1.1.7"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
 
-resolve@^1.1.3, resolve@^1.1.6, resolve@^1.5.0:
+resolve@^1.1.3, resolve@^1.1.6, resolve@^1.3.3, resolve@^1.5.0:
   version "1.5.0"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
   dependencies:
